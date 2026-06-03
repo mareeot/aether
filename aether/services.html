@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Услуги AETHER Studio — комплексные цифровые решения: веб-разработка, UI/UX дизайн, фирменный стиль, цифровая стратегия и консалтинг.">
+  <title>Услуги — AETHER Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%237c5cfc'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='18' font-weight='bold'>A</text></svg>">
+</head>
+<body>
+
+  <div class="page-transition">
+    <div class="loader"></div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">A</span>
+        AETHER
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="services.html" class="active">Услуги</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle"></button>
+        <button class="hamburger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-breadcrumb">
+        <a href="index.html">Главная</a> / <span>Услуги</span>
+      </div>
+      <h1 class="section-title">Наши <span class="text-gradient">услуги</span></h1>
+      <p class="section-subtitle">Комплексные цифровые решения, созданные с точностью, подкреплённые инновациями и реализованные с превосходным качеством. От стратегии до исполнения — мы вас прикрываем.</p>
+    </div>
+  </section>
+
+  <!-- Detailed Services -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="services-detailed-grid">
+        <div class="service-detailed-card reveal">
+          <div class="service-detailed-number">01</div>
+          <div class="service-detailed-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+          </div>
+          <h3 class="service-detailed-title">Веб-разработка</h3>
+          <p class="service-detailed-desc">Мы создаём высокопроизводительные веб-приложения, используя современные архитектуры и передовые технологии. Наши решения масштабируемы, безопасны и оптимизированы для исключительного пользовательского опыта на всех устройствах и платформах.</p>
+          <div class="service-features">
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Пользовательские веб-приложения и платформы</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Headless CMS и разработка API</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Электронная коммерция и маркетплейсы</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Оптимизация производительности и SEO</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Облачная инфраструктура и DevOps</div>
+          </div>
+        </div>
+        <div class="service-detailed-card reveal reveal-delay-1">
+          <div class="service-detailed-number">02</div>
+          <div class="service-detailed-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="service-detailed-title">UI/UX Дизайн</h3>
+          <p class="service-detailed-desc">Дизайн, ориентированный на пользователя — в основе всего, что мы создаём. Мы сочетаем эстетическое совершенство с глубокими исследованиями юзабилити, чтобы создавать интерфейсы, которые красивы, интуитивны и приносят измеримый результат.</p>
+          <div class="service-features">
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Исследование пользователей и юзабилити-тестирование</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Проектирование взаимодействия и прототипирование</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Дизайн-системы и библиотеки компонентов</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Соответствие стандартам доступности (WCAG)</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Визуальный дизайн и моушн-графика</div>
+          </div>
+        </div>
+        <div class="service-detailed-card reveal reveal-delay-2">
+          <div class="service-detailed-number">03</div>
+          <div class="service-detailed-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent-tertiary)" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="service-detailed-title">Фирменный стиль</h3>
+          <p class="service-detailed-desc">Стратегический брендинг, который выходит за рамки логотипов и цветов. Мы создаём комплексные бренд-айдентики, которые передают ваше уникальное ценностное предложение и создают прочные эмоциональные связи с аудиторией.</p>
+          <div class="service-features">
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Бренд-стратегия и позиционирование</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Визуальная айдентика и дизайн логотипа</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Гайдлайны и брендбуки</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Маркетинговые материалы и ассеты</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Голос бренда и месседжинг</div>
+          </div>
+        </div>
+        <div class="service-detailed-card reveal reveal-delay-3">
+          <div class="service-detailed-number">04</div>
+          <div class="service-detailed-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="service-detailed-title">Цифровая стратегия</h3>
+          <p class="service-detailed-desc">Стратегии на основе данных, которые согласуют технологические инвестиции с бизнес-целями. Мы помогаем ориентироваться в сложном цифровом ландшафте с ясностью, целеустремлённостью и чёткой дорожной картой.</p>
+          <div class="service-features">
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Консалтинг по цифровой трансформации</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Оценка и выбор технологического стека</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Планирование и приоритизация roadmap</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Аналитика и стратегия данных</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Стратегия роста и оптимизации</div>
+          </div>
+        </div>
+        <div class="service-detailed-card reveal reveal-delay-4">
+          <div class="service-detailed-number">05</div>
+          <div class="service-detailed-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="service-detailed-title">Дизайн продуктов</h3>
+          <p class="service-detailed-desc">Полный цикл дизайна продукта, который превращает идеи в готовые к рынку цифровые решения. Наша проверенная методология сочетает дизайн-мышление с гибкой разработкой для достижения результатов, которые нравятся пользователям.</p>
+          <div class="service-features">
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Discovery продукта и определение требований</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Разработка и валидация MVP</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Итеративный дизайн и разработка</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Пользовательское тестирование и итерации</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Запуск и постапускная поддержка</div>
+          </div>
+        </div>
+        <div class="service-detailed-card reveal reveal-delay-5">
+          <div class="service-detailed-number">06</div>
+          <div class="service-detailed-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent-tertiary)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="service-detailed-title">Консалтинг</h3>
+          <p class="service-detailed-desc">Экспертные консультации от опытных профессионалов, которые помогли десяткам компаний масштабировать свои цифровые возможности. Мы предоставляем практические инсайты и практическую поддержку, когда она вам нужна.</p>
+          <div class="service-features">
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Аудит технической архитектуры</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Расширение команды и обучение</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Аудит кода и оценка качества</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Оптимизация процессов</div>
+            <div class="service-feature"><span class="service-feature-icon">&#10003;</span> Fractional CTO услуги</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Как мы работаем</span>
+        <h2 class="section-title">Наш процесс</h2>
+        <p class="section-subtitle">Проверенная методология, гарантирующая, что каждый проект будет реализован с превосходным качеством, в срок и в рамках бюджета.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal reveal-delay-1">
+          <div class="process-step-number">1</div>
+          <h3 class="process-step-title">Исследование</h3>
+          <p class="process-step-desc">Мы глубоко погружаемся в ваш бизнес, цели, пользователей и конкурентную среду, чтобы создать прочный фундамент понимания.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="process-step-number">2</div>
+          <h3 class="process-step-title">Стратегия</h3>
+          <p class="process-step-desc">Мы создаём комплексный план, объединяющий технологии, дизайн и бизнес-цели в чёткую дорожную карту.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="process-step-number">3</div>
+          <h3 class="process-step-title">Дизайн</h3>
+          <p class="process-step-desc">Мы превращаем стратегию в красивые, функциональные дизайны через итеративный процесс прототипирования, тестирования и доработки.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-4">
+          <div class="process-step-number">4</div>
+          <h3 class="process-step-title">Разработка</h3>
+          <p class="process-step-desc">Наша инженерная команда воплощает дизайны в жизнь, используя современные фреймворки, чистый код и строгий контроль качества.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-5">
+          <div class="process-step-number">5</div>
+          <h3 class="process-step-title">Запуск</h3>
+          <p class="process-step-desc">Мы развёртываем, мониторим и оптимизируем. Но наши отношения не заканчиваются запуском — мы обеспечиваем постоянную поддержку.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Ценообразование</span>
+        <h2 class="section-title">Прозрачные цены для<br>любых потребностей</h2>
+        <p class="section-subtitle">Выберите модель сотрудничества, которая подходит вашему проекту. Все планы могут быть адаптированы под ваши конкретные требования.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-plan">Стартовый</div>
+          <div class="pricing-price"><span class="pricing-currency">$</span>5k</div>
+          <div class="pricing-period">Стартовая цена за проект</div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> До 5 страниц / экранов</div>
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> Адаптивный дизайн</div>
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> Базовая SEO-настройка</div>
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> 2 раунда правок</div>
+            <div class="pricing-feature disabled"><span class="pricing-feature-icon">&#10007;</span> Пользовательские анимации</div>
+            <div class="pricing-feature disabled"><span class="pricing-feature-icon">&#10007;</span> Приоритетная поддержка</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline btn-sm">Начать</a>
+        </div>
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-badge">Популярный</div>
+          <div class="pricing-plan">Ростовой</div>
+          <div class="pricing-price"><span class="pricing-currency">$</span>15k</div>
+          <div class="pricing-period">Стартовая цена за проект</div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> До 15 страниц / экранов</div>
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> Адаптивный дизайн + mobile-first</div>
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> Продвинутое SEO и аналитика</div>
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> 5 раундов правок</div>
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> Пользовательские анимации</div>
+            <div class="pricing-feature disabled"><span class="pricing-feature-icon">&#10007;</span> Приоритетная поддержка</div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-sm">Начать</a>
+        </div>
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-plan">Корпоративный</div>
+          <div class="pricing-price"><span class="pricing-currency">$</span>50k+</div>
+          <div class="pricing-period">Индивидуальная цена</div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> Безлимитные страницы / экраны</div>
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> Full-stack разработка</div>
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> Пользовательские интеграции и API</div>
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> Безлимитные раунды правок</div>
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> Пользовательские анимации</div>
+            <div class="pricing-feature"><span class="pricing-feature-icon">&#10003;</span> 24/7 приоритетная поддержка</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline btn-sm">Связаться</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Часто задаваемые<br>вопросы</h2>
+        <p class="section-subtitle">Всё, что нужно знать о работе с AETHER. Не нашли ответа? Свяжитесь с нами — мы с радостью поможем.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            Каковы типичные сроки выполнения проекта?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Сроки зависят от объёма и сложности. Типичный проект веб-приложения занимает 8-16 недель от старта до запуска. Мы предоставляем детальный график на этапе исследования и регулярно информируем вас о прогрессе.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question">
+            Как вы организуете коммуникацию по проекту?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Мы верим в прозрачную и последовательную коммуникацию. У вас будет выделенный проектный менеджер, еженедельные отчёты о статусе и доступ к нашим инструментам управления проектами.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question">
+            Работаете ли вы со стартапами и малым бизнесом?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Безусловно. Мы работаем с организациями любого размера — от стартапов на ранней стадии до крупных корпораций. Наш Стартовый пакет специально разработан для небольших проектов и бюджетов без ущерба для качества.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-3">
+          <button class="faq-question">
+            Какие технологии вы используете?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Мы не привязаны к одному технологическому стеку и выбираем лучшие инструменты для каждого проекта. Наш основной стек включает React, Next.js, Node.js, Python, TypeScript и различные облачные платформы.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-4">
+          <button class="faq-question">
+            Предоставляете ли вы поддержку после запуска?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да. Мы предлагаем гибкие пакеты поддержки и обслуживания, чтобы ваш цифровой продукт работал бесперебойно. Это включает обновления безопасности, мониторинг производительности и добавление нового функционала.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label" style="justify-content: center;">Свяжитесь с нами</span>
+        <h2 class="section-title">Готовы начать ваш<br>следующий проект?</h2>
+        <p class="section-subtitle">Обсудим ваше видение и найдём способы, как AETHER может помочь воплотить его в жизнь с помощью исключительного дизайна и передовых технологий.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary">
+            Получить консультацию
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="portfolio.html" class="btn btn-outline">Наши работы</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">A</span>
+            AETHER
+          </a>
+          <p class="footer-description">AETHER — премиальная студия цифрового дизайна и разработки. Мы создаём выдающиеся цифровые продукты, которые приносят измеримые результаты для прогрессивных брендов.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter">&#120143;</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Dribbble">&#9872;</a>
+            <a href="#" aria-label="GitHub">&#9881;</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Страницы</h4>
+          <div class="footer-links">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="services.html">Услуги</a>
+            <a href="portfolio.html">Портфолио</a>
+            <a href="contact.html">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Услуги</h4>
+          <div class="footer-links">
+            <a href="services.html">Веб-разработка</a>
+            <a href="services.html">UI/UX Дизайн</a>
+            <a href="services.html">Фирменный стиль</a>
+            <a href="services.html">Цифровая стратегия</a>
+            <a href="services.html">Консалтинг</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Контакты</h4>
+          <div class="footer-links">
+            <a href="mailto:hello@aether.studio">hello@aether.studio</a>
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            <a href="#">Москва, Россия</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copyright">&copy; 2026 AETHER Studio. Все права защищены.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Условия использования</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AETHER Studio — премиальная студия цифрового дизайна и разработки. Создаём выдающиеся цифровые продукты для бизнеса.">
+  <title>AETHER Studio — Создаём цифровые продукты, которые имеют значение</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%237c5cfc'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='18' font-weight='bold'>A</text></svg>">
+</head>
+<body>
+
+  <div class="page-transition">
+    <div class="loader"></div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">A</span>
+        AETHER
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="services.html">Услуги</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Переключить тему"></button>
+        <button class="hamburger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Открыты для новых проектов
+        </div>
+        <h1 class="hero-title">
+          Создаём <span class="highlight">цифровые</span><br>
+          продукты, которые <span class="highlight">вдохновляют</span>
+        </h1>
+        <p class="hero-subtitle">
+          AETHER — премиальная студия цифрового дизайна и разработки. Мы помогаем брендам создавать выдающиеся цифровые продукты, которые захватывают внимание аудитории и приносят измеримые результаты.
+        </p>
+        <div class="hero-actions">
+          <a href="portfolio.html" class="btn btn-primary">
+            Наши работы
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="contact.html" class="btn btn-secondary">
+            Связаться с нами
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-value"><span data-counter="200" data-suffix="+">0</span></div>
+            <div class="hero-stat-label">Проектов выполнено</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value"><span data-counter="98" data-suffix="%">0</span></div>
+            <div class="hero-stat-label">Удовлетворённость клиентов</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value"><span data-counter="12" data-suffix="+">0</span></div>
+            <div class="hero-stat-label">Лет опыта</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value"><span data-counter="8" data-suffix="">0</span></div>
+            <div class="hero-stat-label">Отраслевых наград</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Листайте</span>
+      <div class="scroll-mouse">
+        <div class="scroll-mouse-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Что мы делаем</span>
+        <h2 class="section-title">Услуги для цифрового<br>превосходства</h2>
+        <p class="section-subtitle">От стратегии до реализации — мы предоставляем комплексные цифровые решения, которые трансформируют бизнес и выводят бренды на новый уровень.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="service-card-title">Веб-разработка</h3>
+          <p class="service-card-desc">Высокопроизводительные веб-приложения на передовых технологиях. Создаём масштабируемые, безопасные и молниеносные цифровые платформы.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <h3 class="service-card-title">UI/UX Дизайн</h3>
+          <p class="service-card-desc">Пользовательский дизайн, сочетающий эстетику с функциональностью. Создаём интуитивные интерфейсы, которые любят пользователи.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="service-card-title">Фирменный стиль</h3>
+          <p class="service-card-desc">Стратегический брендинг, который рассказывает вашу историю, отражает суть и создаёт прочные связи с аудиторией.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-4">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="service-card-title">Цифровая стратегия</h3>
+          <p class="service-card-desc">Стратегии на основе данных, которые согласуют технологии с бизнес-целями. Прокладываем путь от текущего состояния к желаемому результату.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-5">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="service-card-title">Дизайн продуктов</h3>
+          <p class="service-card-desc">Полный цикл дизайна продукта: от концепции до запуска. Превращаем идеи в готовые к рынку цифровые продукты.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-5">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="service-card-title">Консалтинг</h3>
+          <p class="service-card-desc">Экспертные консультации по технологической архитектуре, построению команды и цифровой трансформации для ускорения роста.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="stats-grid reveal">
+        <div class="stat-item">
+          <div class="stat-number"><span data-counter="200" data-suffix="+">0</span></div>
+          <div class="stat-label">Выполненных проектов</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span data-counter="50" data-suffix="+">0</span></div>
+          <div class="stat-label">Довольных клиентов</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span data-counter="12" data-suffix="+">0</span></div>
+          <div class="stat-label">Членов команды</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span data-counter="98" data-suffix="%">0</span></div>
+          <div class="stat-label">Удержание клиентов</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Отзывы</span>
+        <h2 class="section-title">Что говорят наши клиенты</h2>
+        <p class="section-subtitle">Не верьте нам на слово. Вот что говорят о работе с нами наши клиенты.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="testimonial-text">"AETHER полностью преобразил наше цифровое присутствие. Внимание к деталям и инновационный подход превзошли все ожидания. Результаты говорят сами за себя — наши продажи удвоились."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">Е</div>
+            <div>
+              <div class="testimonial-name">Екатерина Соколова</div>
+              <div class="testimonial-role">Генеральный директор, Lumina Technologies</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="testimonial-text">"Работа с AETHER стала переломным моментом для нашего стартапа. Они не просто создали продукт — они помогли нам определить видение и воплотили его в жизнь с исключительным мастерством."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">А</div>
+            <div>
+              <div class="testimonial-name">Алексей Кузнецов</div>
+              <div class="testimonial-role">Основатель, NexaTech</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-3">
+          <div class="testimonial-stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="testimonial-text">"Уровень профессионализма и креативности в AETHER не имеет аналогов. Они превратили нашу устаревшую платформу в современный, интуитивно понятный продукт, который наши клиенты обожают."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">М</div>
+            <div>
+              <div class="testimonial-name">Мария Петрова</div>
+              <div class="testimonial-role">CPO, Vivid Media Group</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Preview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Последние работы</span>
+        <h2 class="section-title">Избранные проекты</h2>
+        <p class="section-subtitle">Взгляд на наши последние работы. Каждый проект — уникальная история сотрудничества, инноваций и исключительного исполнения.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item reveal reveal-delay-1" data-category="web" data-title="Lumina Dashboard" data-category-name="Веб-приложение" data-description="Многофункциональная аналитическая панель с визуализацией данных в реальном времени, управлением пользователями и расширенной отчётностью для компании из списка Fortune 500." data-client="Lumina Technologies" data-year="2026" data-tech="React, Node.js, D3.js, AWS" data-gradient="linear-gradient(135deg, #7c5cfc, #a78bfa)">
+          <div class="portfolio-item-bg" style="background: linear-gradient(135deg, #7c5cfc, #a78bfa);"></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-overlay-category">Веб-приложение</span>
+            <h3 class="portfolio-overlay-title">Lumina Dashboard</h3>
+            <p class="portfolio-overlay-desc">Аналитическая платформа реального времени</p>
+          </div>
+        </div>
+        <div class="portfolio-item reveal reveal-delay-2" data-category="design" data-title="Ребрендинг NexaTech" data-category-name="Фирменный стиль" data-description="Полный ребрендинг, включающий визуальную идентичность, дизайн-систему, редизайн сайта и маркетинговые материалы для быстрорастущего технологического стартапа." data-client="NexaTech" data-year="2026" data-tech="Figma, Illustrator, After Effects" data-gradient="linear-gradient(135deg, #00d4d4, #67e8f9)">
+          <div class="portfolio-item-bg" style="background: linear-gradient(135deg, #00d4d4, #67e8f9);"></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-overlay-category">Фирменный стиль</span>
+            <h3 class="portfolio-overlay-title">Ребрендинг NexaTech</h3>
+            <p class="portfolio-overlay-desc">Полная трансформация бренда</p>
+          </div>
+        </div>
+        <div class="portfolio-item reveal reveal-delay-3" data-category="web" data-title="Vivid Media Platform" data-category-name="Веб-платформа" data-description="Платформа управления контентом и дистрибуции с AI-рекомендациями, мультитенантной архитектурой и функциями совместной работы в реальном времени." data-client="Vivid Media Group" data-year="2025" data-tech="Next.js, Python, PostgreSQL, Redis" data-gradient="linear-gradient(135deg, #ff6b9d, #fbbf24)">
+          <div class="portfolio-item-bg" style="background: linear-gradient(135deg, #ff6b9d, #fbbf24);"></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-overlay-category">Веб-платформа</span>
+            <h3 class="portfolio-overlay-title">Vivid Media Platform</h3>
+            <p class="portfolio-overlay-desc">Контент-экосистема с AI</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-48 reveal">
+        <a href="portfolio.html" class="btn btn-outline">Все проекты</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section section">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label" style="justify-content: center;">Давайте работать вместе</span>
+        <h2 class="section-title">Готовы создать что-то<br>выдающееся?</h2>
+        <p class="section-subtitle">Обсудим ваш проект и найдём способы воплотить ваше видение с помощью передовых технологий и исключительного дизайна.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary">
+            Начать проект
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="services.html" class="btn btn-outline">Наши услуги</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">A</span>
+            AETHER
+          </a>
+          <p class="footer-description">AETHER — премиальная студия цифрового дизайна и разработки. Мы создаём выдающиеся цифровые продукты, которые приносят измеримые результаты для прогрессивных брендов.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter">&#120143;</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Dribbble">&#9872;</a>
+            <a href="#" aria-label="GitHub">&#9881;</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Страницы</h4>
+          <div class="footer-links">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="services.html">Услуги</a>
+            <a href="portfolio.html">Портфолио</a>
+            <a href="contact.html">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Услуги</h4>
+          <div class="footer-links">
+            <a href="services.html">Веб-разработка</a>
+            <a href="services.html">UI/UX Дизайн</a>
+            <a href="services.html">Фирменный стиль</a>
+            <a href="services.html">Цифровая стратегия</a>
+            <a href="services.html">Консалтинг</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Контакты</h4>
+          <div class="footer-links">
+            <a href="mailto:hello@aether.studio">hello@aether.studio</a>
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            <a href="#">Москва, Россия</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copyright">&copy; 2026 AETHER Studio. Все права защищены.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Условия использования</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

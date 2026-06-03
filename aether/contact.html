@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Свяжитесь с AETHER Studio. Начать проект, задать вопрос или просто поздороваться. Будем рады услышать вас.">
+  <title>Контакты — AETHER Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%237c5cfc'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='18' font-weight='bold'>A</text></svg>">
+</head>
+<body>
+
+  <div class="page-transition">
+    <div class="loader"></div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">A</span>
+        AETHER
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="services.html">Услуги</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="contact.html" class="active">Контакты</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle"></button>
+        <button class="hamburger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-breadcrumb">
+        <a href="index.html">Главная</a> / <span>Контакты</span>
+      </div>
+      <h1 class="section-title">Давайте <span class="text-gradient">поговорим</span></h1>
+      <p class="section-subtitle">Есть проект? Хотите обсудить возможное сотрудничество? Или просто сказать «привет»? Заполните форму ниже, и мы ответим в течение 24 часов.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="reveal">
+          <form class="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="name">Имя и фамилия <span style="color: var(--accent-primary);">*</span></label>
+              <input type="text" id="name" class="form-input" placeholder="Иван Петров" required>
+              <div class="form-error"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Электронная почта <span style="color: var(--accent-primary);">*</span></label>
+              <input type="email" id="email" class="form-input" placeholder="ivan@example.com" required>
+              <div class="form-error"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="company">Компания</label>
+              <input type="text" id="company" class="form-input" placeholder="Название вашей компании">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="budget">Бюджет</label>
+              <select id="budget" class="form-input">
+                <option value="">Выберите диапазон</option>
+                <option value="5k-15k">5 000 — 15 000 $</option>
+                <option value="15k-50k">15 000 — 50 000 $</option>
+                <option value="50k+">50 000 $+</option>
+                <option value="not-sure">Пока не знаю</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Детали проекта <span style="color: var(--accent-primary);">*</span></label>
+              <textarea id="message" class="form-textarea" placeholder="Расскажите о вашем проекте, целях, сроках и особых требованиях..." required maxlength="500"></textarea>
+              <div class="char-counter">0 / 500</div>
+              <div class="form-error"></div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              Отправить
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <div class="contact-info-grid reveal reveal-delay-1">
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4 class="contact-info-title">Наш адрес</h4>
+                <p class="contact-info-text">
+                  ул. Тверская, 15, офис 304<br>
+                  Москва, 125009<br>
+                  Россия
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h4 class="contact-info-title">Электронная почта</h4>
+                <p class="contact-info-text">
+                  <a href="mailto:hello@aether.studio">hello@aether.studio</a><br>
+                  <a href="mailto:careers@aether.studio">careers@aether.studio</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-tertiary)" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h4 class="contact-info-title">Телефон</h4>
+                <p class="contact-info-text">
+                  <a href="tel:+74951234567">+7 (495) 123-45-67</a><br>
+                  Пн — Пт, 9:00 — 18:00 МСК
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h4 class="contact-info-title">Часы работы</h4>
+                <p class="contact-info-text">
+                  Понедельник — Пятница: 9:00 — 18:00<br>
+                  Суббота: 10:00 — 14:00<br>
+                  Воскресенье: Выходной
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="map-placeholder reveal reveal-delay-2">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Москва, Тверская улица</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Часто задаваемые<br>вопросы</h2>
+        <p class="section-subtitle">Быстрые ответы на самые распространённые вопросы. Если не нашли нужного — напишите нам напрямую.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            Как быстро вы отвечаете на запросы?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Обычно мы отвечаем в течение 24 часов в рабочие дни. Для срочных вопросов рекомендуйте звонить по телефону или указать «Срочно» в теме письма.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question">
+            Нужен ли предоплата для старта проектов?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да, как правило, мы требуем предоплату 50% для начала работы, оставшаяся сумма выплачивается по завершении. Для крупных корпоративных проектов возможна поэтапная оплата.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question">
+            Можете ли вы работать с нашей существующей командой?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да, мы часто сотрудничаем с внутренними командами через встроенный консалтинг, расширение команды и совместную разработку. Мы адаптируемся к вашему рабочему процессу.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-3">
+          <button class="faq-question">
+            Подписываете ли вы NDA?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да, мы готовы подписывать соглашения о конфиденциальности для защиты вашей информации. Безопасность данных и конфиденциальность — наши приоритеты.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-4">
+          <button class="faq-question">
+            Работаете ли вы с зарубежными клиентами?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да, мы работаем с клиентами по всему миру. У нас есть опыт международных проектов, и мы комфортно работаем на русском и английском языках.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label" style="justify-content: center;">Будьте на связи</span>
+        <h2 class="section-title">Следите за нашим путём</h2>
+        <p class="section-subtitle">Подписывайтесь на нас в социальных сетях для новостей, инсайтов и закулисного контента от команды AETHER.</p>
+        <div class="cta-actions" style="gap: 12px;">
+          <a href="#" class="btn btn-secondary">Twitter / X</a>
+          <a href="#" class="btn btn-secondary">LinkedIn</a>
+          <a href="#" class="btn btn-secondary">Dribbble</a>
+          <a href="#" class="btn btn-secondary">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">A</span>
+            AETHER
+          </a>
+          <p class="footer-description">AETHER — премиальная студия цифрового дизайна и разработки. Мы создаём выдающиеся цифровые продукты, которые приносят измеримые результаты для прогрессивных брендов.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter">&#120143;</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Dribbble">&#9872;</a>
+            <a href="#" aria-label="GitHub">&#9881;</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Страницы</h4>
+          <div class="footer-links">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="services.html">Услуги</a>
+            <a href="portfolio.html">Портфолио</a>
+            <a href="contact.html">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Услуги</h4>
+          <div class="footer-links">
+            <a href="services.html">Веб-разработка</a>
+            <a href="services.html">UI/UX Дизайн</a>
+            <a href="services.html">Фирменный стиль</a>
+            <a href="services.html">Цифровая стратегия</a>
+            <a href="services.html">Консалтинг</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Контакты</h4>
+          <div class="footer-links">
+            <a href="mailto:hello@aether.studio">hello@aether.studio</a>
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            <a href="#">Москва, Россия</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copyright">&copy; 2026 AETHER Studio. Все права защищены.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Условия использования</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

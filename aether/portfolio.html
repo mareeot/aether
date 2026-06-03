@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио AETHER Studio — лучшие работы в веб-разработке, UI/UX дизайне, фирменном стиле и цифровой стратегии.">
+  <title>Портфолио — AETHER Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%237c5cfc'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='18' font-weight='bold'>A</text></svg>">
+</head>
+<body>
+
+  <div class="page-transition">
+    <div class="loader"></div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">A</span>
+        AETHER
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="services.html">Услуги</a>
+        <a href="portfolio.html" class="active">Портфолио</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle"></button>
+        <button class="hamburger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-breadcrumb">
+        <a href="index.html">Главная</a> / <span>Портфолио</span>
+      </div>
+      <h1 class="section-title">Наши <span class="text-gradient">работы</span></h1>
+      <p class="section-subtitle">Коллекция лучших проектов. Каждый из них представляет уникальное сотрудничество, творческий вызов и успешный результат, которым мы гордимся.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all">Все проекты</button>
+        <button class="filter-btn" data-filter="web">Веб-разработка</button>
+        <button class="filter-btn" data-filter="design">UI/UX Дизайн</button>
+        <button class="filter-btn" data-filter="brand">Брендинг</button>
+        <button class="filter-btn" data-filter="strategy">Стратегия</button>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item reveal" data-category="web" data-title="Lumina Analytics Dashboard" data-category-name="Веб-приложение" data-description="Многофункциональная аналитическая панель реального времени, обслуживающая более 2 миллионов пользователей. Возможности включают интерактивную визуализацию данных, конструктор отчётов, сегментацию пользователей и AI-аналитику. Платформа обрабатывает более 10 ТБ данных ежедневно." data-client="Lumina Technologies" data-year="2026" data-tech="React, D3.js, Node.js, AWS, PostgreSQL" data-gradient="linear-gradient(135deg, #7c5cfc, #a78bfa)">
+          <div class="portfolio-item-bg" style="background: linear-gradient(135deg, #7c5cfc, #a78bfa);"></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-overlay-category">Веб-приложение</span>
+            <h3 class="portfolio-overlay-title">Lumina Analytics Dashboard</h3>
+            <p class="portfolio-overlay-desc">Платформа данных реального времени для 2M+ пользователей</p>
+          </div>
+        </div>
+        <div class="portfolio-item reveal reveal-delay-1" data-category="brand" data-title="Ребрендинг NexaTech" data-category-name="Фирменный стиль" data-description="Полный ребрендинг для быстрорастущего технологического стартапа. Создана комплексная система визуальной идентификации, включая логотип, типографику, цветовую палитру, иконографию, брендбук и маркетинговые материалы." data-client="NexaTech" data-year="2026" data-tech="Figma, Illustrator, After Effects" data-gradient="linear-gradient(135deg, #00d4d4, #67e8f9)">
+          <div class="portfolio-item-bg" style="background: linear-gradient(135deg, #00d4d4, #67e8f9);"></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-overlay-category">Фирменный стиль</span>
+            <h3 class="portfolio-overlay-title">Ребрендинг NexaTech</h3>
+            <p class="portfolio-overlay-desc">Комплексная трансформация бренда</p>
+          </div>
+        </div>
+        <div class="portfolio-item reveal reveal-delay-2" data-category="web" data-title="Vivid Media Platform" data-category-name="Веб-платформа" data-description="Платформа управления контентом нового поколения с AI-рекомендациями, мультитенантной архитектурой, совместной работой в реальном времени и автоматизированными рабочими процессами." data-client="Vivid Media Group" data-year="2025" data-tech="Next.js, Python, PostgreSQL, Redis, Docker" data-gradient="linear-gradient(135deg, #ff6b9d, #fbbf24)">
+          <div class="portfolio-item-bg" style="background: linear-gradient(135deg, #ff6b9d, #fbbf24);"></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-overlay-category">Веб-платформа</span>
+            <h3 class="portfolio-overlay-title">Vivid Media Platform</h3>
+            <p class="portfolio-overlay-desc">Контент-экосистема с искусственным интеллектом</p>
+          </div>
+        </div>
+        <div class="portfolio-item reveal reveal-delay-3" data-category="design" data-title="Finora Мобильное приложение" data-category-name="UI/UX Дизайн" data-description="Приложение для управления личными финансами, делающее финансовое благополучие доступным. Интуитивные инструменты бюджетирования, умные цели накопления, отслеживание инвестиций и персонализированные инсайты." data-client="Finora Inc." data-year="2025" data-tech="Figma, Principle, Swift, Kotlin" data-gradient="linear-gradient(135deg, #f59e0b, #f97316)">
+          <div class="portfolio-item-bg" style="background: linear-gradient(135deg, #f59e0b, #f97316);"></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-overlay-category">UI/UX Дизайн</span>
+            <h3 class="portfolio-overlay-title">Finora Мобильное приложение</h3>
+            <p class="portfolio-overlay-desc">Награждённое приложение для финансов</p>
+          </div>
+        </div>
+        <div class="portfolio-item reveal reveal-delay-4" data-category="strategy" data-title="Цифровая стратегия MediConnect" data-category-name="Цифровая стратегия" data-description="Комплексная стратегия цифровой трансформации для сети здравоохранения, обслуживающей 500K+ пациентов. Включала оценку технологий, разработку дорожной карты и контроль внедрения." data-client="MediConnect Health" data-year="2025" data-tech="Стратегия, Консалтинг, Облачная архитектура" data-gradient="linear-gradient(135deg, #10b981, #34d399)">
+          <div class="portfolio-item-bg" style="background: linear-gradient(135deg, #10b981, #34d399);"></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-overlay-category">Цифровая стратегия</span>
+            <h3 class="portfolio-overlay-title">MediConnect Трансформация</h3>
+            <p class="portfolio-overlay-desc">Стратегия цифрового здравоохранения</p>
+          </div>
+        </div>
+        <div class="portfolio-item reveal reveal-delay-5" data-category="web" data-title="ShopWave E-Commerce" data-category-name="Электронная коммерция" data-description="Высокопроизводительная платформа электронной коммерции с headless-архитектурой, управлением запасами в реальном времени и персонализированными рекомендациями. Обеспечивает 99.9% аптайм." data-client="ShopWave Retail" data-year="2024" data-tech="Next.js, Shopify, Node.js, Redis, Cloudflare" data-gradient="linear-gradient(135deg, #ec4899, #a855f7)">
+          <div class="portfolio-item-bg" style="background: linear-gradient(135deg, #ec4899, #a855f7);"></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-overlay-category">Электронная коммерция</span>
+            <h3 class="portfolio-overlay-title">ShopWave Platform</h3>
+            <p class="portfolio-overlay-desc">Высокопроизводительное e-commerce решение</p>
+          </div>
+        </div>
+        <div class="portfolio-item reveal reveal-delay-1" data-category="design" data-title="Дизайн-система EcoTrack" data-category-name="Дизайн-система" data-description="Комплексная дизайн-система для стартапа в сфере экологического мониторинга. Включает 200+ компонентов, доступность WCAG AAA, дизайн-токены и документацию." data-client="EcoTrack" data-year="2024" data-tech="Figma, Storybook, React, TypeScript" data-gradient="linear-gradient(135deg, #22d3ee, #06b6d4)">
+          <div class="portfolio-item-bg" style="background: linear-gradient(135deg, #22d3ee, #06b6d4);"></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-overlay-category">Дизайн-система</span>
+            <h3 class="portfolio-overlay-title">Дизайн-система EcoTrack</h3>
+            <p class="portfolio-overlay-desc">200+ компонентов для эко-стартапа</p>
+          </div>
+        </div>
+        <div class="portfolio-item reveal reveal-delay-2" data-category="brand" data-title="Упаковка PureLeaf" data-category-name="Фирменный стиль" data-description="Полная айдентика и дизайн упаковки для премиального бренда органического чая. Создана изысканная визуальная идентификация, вдохновлённая природой. Редизайн увеличил продажи на 30%." data-client="PureLeaf Organics" data-year="2024" data-tech="Illustrator, Photoshop, 3D-макеты" data-gradient="linear-gradient(135deg, #84cc16, #22c55e)">
+          <div class="portfolio-item-bg" style="background: linear-gradient(135deg, #84cc16, #22c55e);"></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-overlay-category">Фирменный стиль</span>
+            <h3 class="portfolio-overlay-title">Упаковка PureLeaf</h3>
+            <p class="portfolio-overlay-desc">Премиальный органический чай</p>
+          </div>
+        </div>
+        <div class="portfolio-item reveal reveal-delay-3" data-category="strategy" data-title="Оптимизация TechFlow" data-category-name="Цифровая стратегия" data-description="Оптимизация технологий и стратегия цифровой трансформации для логистической компании. Внедрение автоматизированных рабочих процессов и прогнозной аналитики. Снижение операционных затрат на 35%." data-client="TechFlow Logistics" data-year="2024" data-tech="Оптимизация процессов, IoT, Облачная миграция" data-gradient="linear-gradient(135deg, #f97316, #ef4444)">
+          <div class="portfolio-item-bg" style="background: linear-gradient(135deg, #f97316, #ef4444);"></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-overlay-category">Цифровая стратегия</span>
+            <h3 class="portfolio-overlay-title">Оптимизация TechFlow</h3>
+            <p class="portfolio-overlay-desc">Логистическая цифровая трансформация</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="stats-grid reveal">
+        <div class="stat-item">
+          <div class="stat-number"><span data-counter="200" data-suffix="+">0</span></div>
+          <div class="stat-label">Реализованных проектов</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span data-counter="50" data-suffix="+">0</span></div>
+          <div class="stat-label">Довольных клиентов</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span data-counter="98" data-suffix="%">0</span></div>
+          <div class="stat-label">Уровень удовлетворённости</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span data-counter="8" data-suffix="">0</span></div>
+          <div class="stat-label">Полученных наград</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label" style="justify-content: center;">Давайте создадим вместе</span>
+        <h2 class="section-title">У вас есть проект?</h2>
+        <p class="section-subtitle">Расскажите нам о нём. Мы обсудим, как AETHER может помочь воплотить ваше видение в реальность.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary">
+            Начать проект
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="services.html" class="btn btn-outline">Наши услуги</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <div class="modal-image" style="background: linear-gradient(135deg, #7c5cfc, #a78bfa);"></div>
+      <div class="modal-category">Веб-приложение</div>
+      <h2 class="modal-title">Название проекта</h2>
+      <p class="modal-description">Описание проекта.</p>
+      <div class="modal-details">
+        <div class="modal-detail-item modal-detail-client">
+          <div class="modal-detail-label">Клиент</div>
+          <div class="modal-detail-value">Конфиденциально</div>
+        </div>
+        <div class="modal-detail-item modal-detail-year">
+          <div class="modal-detail-label">Год</div>
+          <div class="modal-detail-value">2026</div>
+        </div>
+        <div class="modal-detail-item modal-detail-tech">
+          <div class="modal-detail-label">Технологии</div>
+          <div class="modal-detail-value">Различные</div>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Начать похожий проект</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">A</span>
+            AETHER
+          </a>
+          <p class="footer-description">AETHER — премиальная студия цифрового дизайна и разработки. Мы создаём выдающиеся цифровые продукты, которые приносят измеримые результаты для прогрессивных брендов.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter">&#120143;</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Dribbble">&#9872;</a>
+            <a href="#" aria-label="GitHub">&#9881;</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Страницы</h4>
+          <div class="footer-links">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="services.html">Услуги</a>
+            <a href="portfolio.html">Портфолио</a>
+            <a href="contact.html">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Услуги</h4>
+          <div class="footer-links">
+            <a href="services.html">Веб-разработка</a>
+            <a href="services.html">UI/UX Дизайн</a>
+            <a href="services.html">Фирменный стиль</a>
+            <a href="services.html">Цифровая стратегия</a>
+            <a href="services.html">Консалтинг</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-column-title">Контакты</h4>
+          <div class="footer-links">
+            <a href="mailto:hello@aether.studio">hello@aether.studio</a>
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            <a href="#">Москва, Россия</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copyright">&copy; 2026 AETHER Studio. Все права защищены.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Условия использования</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
